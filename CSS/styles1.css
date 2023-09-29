@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600&display=swap');
+
+:root {    
+    --color-primary-light-1: rgb(175, 68, 190, 0.8);
+    --color-primary-light-2-: #A120B3;
+    --color-primary: #9003A4;
+    --color-primary-shadow-1: #720281;
+    --color-primary-shadow-2: #590165;
+
+    --color-accent-: #00A750;
+    --color-action-button: #3EA6FF;
+    --color-error: #C90000;
+
+    --color-dark: #222222;
+    --color-white-90:rgba(255, 255, 255, 0.90);
+    --color-white-60:rgba(255, 255, 255, 0.60);
+}
+
+* {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    background:transparent;
+}
+
+/* ------------------------------------TEXTOS------------------------------------ */
+.h1-baloo, .h2-baloo, .h3-baloo, .text-baloo, .p-baloo{
+    font-family: 'Baloo 2', cursive;
+    color: var(--color-white-90);
+    word-wrap: break-word;
+}
+.h1-baloo {
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 500;
+}
+.h2-baloo {
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 500;
+}
+.h3-baloo {
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 500;
+}
+.text-baloo {
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 400;
+}
+.p-baloo {
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+}
+
+/* ------------------------------------DECORACIONES------------------------------------ */
+.bold {
+    font-weight: 600;
+}
+.underline {
+    text-decoration: underline;
+}
+.line-through {
+    text-decoration: line-through;
+}
+.light {
+    color: var(--color-white-60);
+}
+
+/* ------------------------------------ESTRUCTURA------------------------------------ */
+.container {
+    display: flex;
+    align-items: center;
+}
+.column {
+    flex-direction: column;
+}
+
+.flex-start {
+    justify-content: flex-start;
+}
+.flex-center {
+    justify-content: center;
+}
+.space-between {
+    justify-content: space-between;
+}
+
+
+.button-class {
+    border-radius: 1000px;
+    padding: 2px 10px 2px 10px;
+}
+
+body {
+    background-color: var(--color-dark);
+}
+
