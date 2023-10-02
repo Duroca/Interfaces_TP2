@@ -9,14 +9,14 @@ import logo from '../images/logo_and_text.png'
 
 
 function Navbar_c() {
-    const [classState, setClassState] = useState("menu-burger burger-icon");
+const [classState, setClassState] = useState("menu-burger burger-icon");
     const openMenu = () => {
         let cS = classState;
         cS = cS.includes("open") ? "menu-burger burger-icon" : "menu-burger burger-icon open";
         setClassState(cS);
     };
     return (
-            <nav className="container row navbar">
+                    <nav className="container row navbar">
                 <div className="container row flex-start">
                     {/* IZQUIERDA */}
                     <div>
@@ -31,7 +31,7 @@ function Navbar_c() {
                     </div>
                 </div>
                 
-                <div className="container row flex-center">
+<div className="container row flex-center">
                     {/* CENTRO */}
                     <div className="container search-bar">
                         <input type="text" placeholder="Buscar juego" />
@@ -57,7 +57,7 @@ function Navbar_c() {
                     </div>
                 </div>
             </nav>
-    );
+            );
 }
 
 export default Navbar_c;
