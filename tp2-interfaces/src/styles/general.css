@@ -16,6 +16,7 @@
     --color-dark-50:rgba(34, 34, 34, 0.50);
 
     --color-white-90:rgba(255, 255, 255, 0.90);
+    --color-white-80:rgba(255, 255, 255, 0.80);
     --color-white-60:rgba(255, 255, 255, 0.60);
 }
 
@@ -81,8 +82,17 @@ html {
 .line-through {
     text-decoration: line-through;
 }
-.light {
+.light-60 {
     color: var(--color-white-60);
+}
+.light-80 {
+    color: var(--color-white-80);
+}
+.light-90 {
+    color: var(--color-white-90);
+}
+.dark {
+    color: var(--color-dark);
 }
 
 /* ------------------------------------ESTRUCTURA------------------------------------ */
@@ -93,7 +103,6 @@ html {
 .column {
     flex-direction: column;
 }
-
 .flex-start {
     justify-content: flex-start;
 }
@@ -106,7 +115,21 @@ html {
 .space-between {
     justify-content: space-between;
 }
-
+.space-around{
+    justify-content: space-around;
+}
+.pad-2{
+    padding: 2px;
+}
+.pad-4{
+    padding: 4px;
+}
+.pad-8{
+    padding: 8px;
+}
+.pad-16{
+    padding: 16px;
+}
 
 .button-class {
     border-radius: 1000px;
