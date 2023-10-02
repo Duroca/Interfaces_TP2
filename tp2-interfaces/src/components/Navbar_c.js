@@ -1,16 +1,26 @@
-import React from 'react'
+import React, { useState } from "react";
 import '../styles/navbar.css'
+import search_icon from '../icons/search.svg'
+import heart_icon from '../icons/heart.svg'
+import cart_icon from '../icons/cart.svg'
+
 import logo from '../images/logo_and_text.png'
 
 
+
 function Navbar_c() {
+    const [classState, setClassState] = useState("menu-burger burger-icon");
+    const openMenu = () => {
+        let cS = classState;
+        cS = cS.includes("open") ? "menu-burger burger-icon" : "menu-burger burger-icon open";
+        setClassState(cS);
+    };
     return (
-        <header>
             <nav className="container row navbar">
                 <div className="container row flex-start">
                     {/* IZQUIERDA */}
                     <div>
-                        <div className="menu-burger burger-icon">
+                        <div className={classState} onClick={openMenu}>
                             <span></span>
                             <span></span>
                             <span></span>
@@ -21,14 +31,33 @@ function Navbar_c() {
                     </div>
                 </div>
                 
+                <div className="container row flex-center">
+                    {/* CENTRO */}
+                    <div className="container search-bar">
+                        <input type="text" placeholder="Buscar juego" />
+                        <button className="unstyle container">
+                            <img src={search_icon} alt="search"/>
+                        </button>
+                    </div>
+                </div>
+
+                <div className="container row flex-end">
+                    {/* DERECHA */}
+                    <div className="container row">
+                        <div className="container row pad-4">
+                            <img src={heart_icon} className="pad-4" alt="My colection" />
+                            <h3 className="h3-baloo dark">Mis favoritos</h3>
+                        </div>
+                    </div>
+                    <div>
+                        <img src={cart_icon} className="pad-4" alt="My colection" />
+                    </div>
+                    <div>
+                        <p className="p-baloo">-user</p>
+                    </div>
+                </div>
             </nav>
-        </header>
     );
 }
-
-const icon = document.querySelector('.menu-burger');
-icon.addEventListener('click', (event) => {
-    icon.classList.toggle("open");
-});
 
 export default Navbar_c;

@@ -1,0 +1,13 @@
+@import url('./general.css');
+
+#footer {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+#footer section:nth-child(1) {
+    background-color: var(--color-primary);
+}
+#footer section:nth-child(2) {
+    background-color: var(--color-primary-shadow-1);
+}
