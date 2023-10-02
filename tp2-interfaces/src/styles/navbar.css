@@ -1,7 +1,7 @@
 @import url('./general.css');
 
 #header {
-    position: fixed;
+    position: sticky;
     width: 100%;
 }
 .navbar {
