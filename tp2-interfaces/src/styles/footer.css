@@ -11,3 +11,6 @@
 #footer section:nth-child(2) {
     background-color: var(--color-primary-shadow-1);
 }
+#footer li {
+    color: var(--color-white-70);
+}

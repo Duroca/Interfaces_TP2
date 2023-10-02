@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import '../styles/navbar.css'
-import search_icon from '../icons/search.svg'
+import search_icon from '../icons/search.svg'   
 import heart_icon from '../icons/heart.svg'
 import cart_icon from '../icons/cart.svg'
 
@@ -46,7 +46,7 @@ const [classState, setClassState] = useState("menu-burger burger-icon");
                     <div className="container row">
                         <div className="container row pad-4">
                             <img src={heart_icon} className="pad-4" alt="My colection" />
-                            <h3 className="h3-baloo dark">Mis favoritos</h3>
+                            <h3 className="text-baloo semi-bold dark">Mis favoritos</h3>
                         </div>
                     </div>
                     <div>
