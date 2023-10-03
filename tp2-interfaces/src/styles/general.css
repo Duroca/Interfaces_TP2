@@ -191,8 +191,14 @@ main {
 .gap-32 {
     gap: 32px;
 }
+.gap-18 {
+    gap: 12px;
+}
 .gap-12 {
     gap: 12px;
+}
+.gap-8 {
+    gap: 8px;
 }
 .gap-4 {
     gap: 4px;
