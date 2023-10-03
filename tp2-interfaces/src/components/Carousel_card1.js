@@ -17,4 +17,4 @@ const Carousel_card1 = (props) => {
     );
 }
   
-export default CaroCarousel_card1usel;
+export default Carousel_card1;
