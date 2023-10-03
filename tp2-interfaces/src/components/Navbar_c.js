@@ -27,7 +27,9 @@ const [classState, setClassState] = useState("menu-burger burger-icon");
                         </div>
                     </div>
                     <div>
-                        <img src={logo} className="" alt="logo" />
+                        <a href="#">
+                            <img src={logo} className="" alt="logo" />
+                        </a>
                     </div>
                 </div>
                 
