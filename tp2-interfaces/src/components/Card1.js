@@ -3,7 +3,7 @@ import '../styles/card.css'
 import heart_icon from '../icons/heart_white.svg'
 
 
-function Card({name, price, discount, img}) {
+function Card1({name, price, discount, img}) {
     return (
         <div className='card-regular'>
             <div className='inside-border'></div>
@@ -51,4 +51,4 @@ function Card({name, price, discount, img}) {
     );
 }
 
-export default Card;
+export default Card1;
