@@ -45,6 +45,7 @@
     background-color: var(--color-white-05);
     padding: 5px;
     min-height: 5px;
+    transition: all 0.3s ease;
 }
 .card-regular .like{
     box-sizing: border-box;
@@ -79,4 +80,7 @@
 }
 .card-regular:hover .like {
     opacity: 1;
+}
+.card-regular .button-class:hover {
+    background-color: var(--color-action-button);
 }
