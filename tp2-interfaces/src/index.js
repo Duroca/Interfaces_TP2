@@ -3,9 +3,9 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import Navbar_c from './components/Navbar_c';
 import Footer from './components/Footer';
-import Card from './components/Card'
+import Card from './components/Card';
 
-import gof_image from './images/god_of_war.png'
+import gof_image from './images/god_of_war.png';
 
 ReactDOM.createRoot(document.getElementById('header')).render(
     <Navbar_c />

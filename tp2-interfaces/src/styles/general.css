@@ -1,25 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600&display=swap');
 
 :root {    
-    --color-primary-light-1: rgb(175, 68, 190, 0.8);
-    --color-primary-light-2-: #A120B3;
+    --color-primary-light-2: rgb(175, 68, 190, 0.8);
+    --color-primary-light-1: #A120B3;
     --color-primary: #9003A4;
     --color-primary-shadow-1: #720281;
     --color-primary-shadow-2: #590165;
 
-    --color-accent-: #00A750;
+    --color-accent: #00A750;
     --color-action-button: #3EA6FF;
     --color-error: #C90000;
 
-    --color-dark: #222222;
+    --color-dark:rgba(34, 34, 34);
     --color-dark-70:rgba(34, 34, 34, 0.70);
     --color-dark-50:rgba(34, 34, 34, 0.50);
 
+    --color-white:rgba(255, 255, 255);
     --color-white-90:rgba(255, 255, 255, 0.90);
     --color-white-80:rgba(255, 255, 255, 0.80);
     --color-white-70:rgba(255, 255, 255, 0.70);
     --color-white-60:rgba(255, 255, 255, 0.60);
     --color-white-40:rgba(255, 255, 255, 0.40);
+    --color-white-05:rgba(255, 255, 255, 0.05);
 }
 
 * {
@@ -31,28 +33,40 @@
 ul {
     list-style: none;
 }
+button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: none;
+}
 .unstyle {
     all: unset;
 }
 body {
     background-color: var(--color-dark);
-    display: flex;
-    flex-direction: column;
     min-height: 100vh;
 }
-html {
-    position: relative;
-    height: fit-content;
-}
 main {
-    padding-bottom: 300px;
+    min-height: 50vh;
+    display: flex;
+    padding: 48px 0px;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+    align-self: stretch;
 }
 
 /* ------------------------------------TEXTOS------------------------------------ */
 .h1-baloo, .h2-baloo, .h3-baloo, .text-baloo, .p-baloo {
-    font-family: 'Baloo 2', cursive;
+    font-family: 'Baloo 2';
+    font-style: normal;
     color: var(--color-white-90);
-    word-wrap: break-word;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 .h1-baloo {
     font-size: 36px;
@@ -66,17 +80,22 @@ main {
 }
 .h3-baloo {
     font-size: 18px;
-    line-height: 18px;
+    line-height: 20px;
     font-weight: 500;
 }
 .text-baloo {
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 14px;
+    line-height: 16px;
     font-weight: 400;
 }
 .p-baloo {
     font-size: 12px;
-    line-height: 16px;
+    line-height: 12px;
+    font-weight: 400;
+}
+.p-10-baloo {
+    font-size: 10px;
+    line-height: 10px;
     font-weight: 400;
 }
 
@@ -87,6 +106,9 @@ main {
 }
 .semi-bold {
     font-weight: 500;
+}
+.not-bold {
+    font-weight: 400;
 }
 .underline {
     text-decoration: underline;
@@ -124,8 +146,11 @@ main {
 .column {
     flex-direction: column;
 }
-.align-top {
+.align-start {
     align-items: flex-start;
+}
+.align-end {
+    align-items: flex-end;
 }
 .flex-start {
     justify-content: flex-start;

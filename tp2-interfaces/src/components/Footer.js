@@ -58,10 +58,10 @@ function Footer() {
                 <div>
                     <img src={logo} className='' alt='logo pulpgames'/>
                 </div>
-                <div className="container gap-100 align-top">
+                <div className="container gap-100 align-start">
                     <div className='container column gap-12 flex-start'>
                         <div className='container fill-width'>
-                            <h3 className="h3-baloo light-80">Categorías</h3>
+                            <h3 className="h3-baloo light-60">Categorías</h3>
                         </div>
                         <div className='container gap-32'>
                             <ul className=''>
@@ -80,7 +80,7 @@ function Footer() {
                     </div>
                     <div className='container column gap-12'>
                         <div className='container fill-width'>
-                            <h3 className="h3-baloo light-80">Información</h3>
+                            <h3 className="h3-baloo light-60">Información</h3>
                         </div>
                         <div className='container fill-width'>
                             <ul className=''>
@@ -93,7 +93,7 @@ function Footer() {
                     </div>
                     <div className='container column gap-12'>
                         <div className='container fill-width'>
-                            <h3 className="h3-baloo light-80">Contactanos</h3>
+                            <h3 className="h3-baloo light-60">Contactanos</h3>
                         </div>
                         <div className='container fill-width'>
                             <ul className=''>
@@ -104,7 +104,7 @@ function Footer() {
                     </div>
                     <div className='container column gap-12'>
                         <div className='container fill-width'>
-                            <h3 className="h3-baloo light-80">Ayuda</h3>
+                            <h3 className="h3-baloo light-60">Ayuda</h3>
                         </div>
                         <div className='container fill-width'>
                             <ul className=''>
